@@ -1,0 +1,266 @@
+/* Estilos gerais para o toast */
+.toastClass {
+  position: relative; /* Atualizado para relative */
+  margin: 10px 0;
+  background-color: var(--verde-toast);
+  height: auto;
+  width: 100%;
+  max-width: 25rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(56, 56, 56, 0.8);
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.toastClass.mostrar {
+  display: flex;
+}
+
+@keyframes toast {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostrar.toastClass {
+  animation: toast 0.5s;
+}
+
+.toastClass p {
+  color: var(--verde-escuro-toast);
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (min-width: 375px) and (max-width: 424px) {
+  .toastClass {
+    width: 10rem !important;
+    flex-wrap: wrap;
+  }
+
+  .toastClass p {
+    font-size: 13px !important;
+  }
+
+  .imageAvisoToast {
+    width: 20px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .toastClass {
+    width: 10rem !important;
+    flex-wrap: wrap;
+  }
+
+  .toastClass p {
+    font-size: 13px !important;
+  }
+
+  .imageAvisoToast {
+    width: 20px;
+  }
+
+  .container {
+    width: 100vw;
+    height: 143vh;
+  }
+
+  .conteudo {
+    width: 98vw;
+    height: 140vh;
+  }
+
+  .caixa_titulo {
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titulo {
+    font-size: 23px;
+  }
+
+  #linha_horizontal {
+    display: none;
+  }
+
+  .form_table {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formulario {
+    width: 100%;
+    height: 55%;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  table {
+    margin-top: 5%;
+  }
+
+  th {
+    font-size: 12px;
+    height: 40px;
+  }
+
+  td {
+    font-size: 11px;
+  }
+
+  .tabela {
+    width: 100vw;
+    height: 67%;
+  }
+
+  .tbodyClass {
+    height: 15rem;
+  }
+
+  #titulo_tabela {
+    font-size: 16px;
+  }
+
+  #input_filtro {
+    width: 6rem;
+  }
+
+  .quadradoCor {
+    width: 15px;
+    height: 15px;
+  }
+
+  .cancel,
+  .edit {
+    padding: 0.8rem;
+    width: 1rem;
+    height: 0.5rem;
+  }
+
+  .edit {
+    background-size: 13px;
+  }
+
+  .cancel {
+    background-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .titulo {
+    font-size: 28px;
+  }
+
+  #linha_horizontal {
+    display: flex;
+  }
+
+  .container {
+    height: 140vh;
+  }
+  .conteudo {
+    height: 140vh;
+    margin-top: 5%;
+  }
+  .caixa_titulo {
+    height: 6%;
+    justify-content: center;
+    margin: 0;
+    margin-top: 2%;
+  }
+
+  .formulario {
+    width: 100%;
+    height: 95%;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  .form_table {
+    height: 46%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  table {
+    margin-top: 5%;
+  }
+
+  .tabela {
+    height: 0;
+  }
+
+  #filtro input {
+    font-size: 14px;
+  }
+
+  td {
+    font-size: 13px;
+  }
+
+  tbody {
+    height: 12rem;
+  }
+
+  td.desc {
+    width: 3%;
+  }
+
+  td.evento {
+    width: 1%;
+  }
+
+  td.parametros {
+    width: 3%;
+  }
+
+  td.operador {
+    width: 3%;
+  }
+
+  td.valor {
+    width: 5%;
+  }
+
+  td.marker {
+    width: 3%;
+  }
+
+  td.botoes {
+    width: 4%;
+  }
+
+  .quadradoCor {
+    width: 20px;
+    height: 20px;
+  }
+
+  .edit,
+  .cancel {
+    padding: 1rem;
+    width: 1rem;
+    height: 50%;
+  }
+
+  .edit {
+    background-size: 18px;
+  }
+
+  .cancel {
+    background-size: 25px;
+  }
+}

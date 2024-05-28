@@ -1,0 +1,76 @@
+.container {
+    margin-top: 10%;
+}
+  
+label {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  display: block;
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+  
+input {
+  width: 100%;
+  max-width: 25%;
+  height: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+input:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+input:active {
+  transform: scale(0.95);
+}
+
+input:focus {
+  border: 2px solid grey;
+}
+
+button {
+  margin-top: 3%;
+  cursor: pointer;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  transition: background-color 0.3s, color 0.3s;
+}
+  
+button[type="submit"] {
+  background-color: #4CAF50; 
+  color: white;
+  margin-right: 10px;
+}
+  
+button[type="button"] {
+  background-color: #f44336; 
+  color: white;
+  margin-left: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; 
+  color: #000;
+}
+
+button[type="button"]:hover {
+  background-color: #ce1a1a; 
+  color: #000;
+}
+  
+  

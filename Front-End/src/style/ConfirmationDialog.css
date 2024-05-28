@@ -1,0 +1,25 @@
+.confirmation-dialog {
+    background-color: #D0D0D0;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .confirm-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+  }
+  

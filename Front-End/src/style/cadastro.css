@@ -1,0 +1,45 @@
+.button-cad {
+    margin-bottom: 7%;
+}
+
+.register-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .register-form .input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Alinha os elementos horizontalmente */
+  }
+  
+  label {
+    margin-bottom: -10px;
+  }
+  
+  input {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .register-form .input-container > div {
+    display: flex; /* Para alinhar os labels e inputs horizontalmente */
+    flex-direction: column; /* Coloca a label em cima do input */
+    align-items: center; /* Centraliza verticalmente os labels e inputs */
+    margin-top: -10px;
+  }
+  
+  .register-form label {
+    min-width: 100px; /* Define a largura mínima das labels */
+    text-align: right; /* Alinha o texto das labels à direita */
+  }
+  
+  .register-form input {
+    min-width: 200px; /* Define a largura mínima dos inputs */
+  }
+  

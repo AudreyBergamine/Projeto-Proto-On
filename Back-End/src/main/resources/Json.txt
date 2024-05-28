@@ -1,0 +1,23 @@
+FUNCIONARIO
+
+URL: http://localhost:8080/protoon/auth/register/funcionario/1
+{
+  "endereco": {
+    "tipo_endereco": "Residencial",
+    "num_cep": "08541-000",
+    "logradouro": "Estrada",
+    "num_endereco": "1611",
+    "complemento": "Casa",
+    "bairro": "Cháracara Laguna",
+    "cidade": "Ferraz de Vasconcelos",
+    "estado": "SP",
+    "pais": "Brasil"
+  },
+  "nome": "ProtonOn da Silva",
+  "email": "proton@gmail.com",
+  "senha": "123456",
+  "num_CPF": "418.081.504-49",
+  "celular": "978742743",
+  "data_nascimento": "2024-03-09",
+  "role": "COORDENADOR"
+}

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Jura:wght@300..700&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Jura:wght@300..700&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin-top: 120px;
+}
+
+.header {
+    background-color: #2D9596;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px; /* Livia - aumentei, para o ícone ter mais espaço e o avatar ficar centralizado */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.footer {
+    background-color: #2D9596;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.title-proton a {
+    margin-left: 25px;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+}
+
+nav {
+    margin-right: 5%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-links a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #265073;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu {
+    display: none;
+    width: 250px;
+    position: absolute;
+    background-color: #f0f0f0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 1px;
+    transform: translateX(-30%);
+    border-radius: 15px;
+}
+
+.submenu li {
+    margin: 10px;
+}
+
+.submenu li:hover {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.submenu a {
+    font-size: 17px;
+    color: black;
+}
+
+.nav-links li:hover .submenu {
+    display: block;
+}
+
+.main-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #265073;
+    text-align: center;
+    margin: 80px 0;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 30%;
+}
+
+.btn-log,
+.btn-cad {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: #9AD0C2;
+    --btn-bg-2: #2D9596;
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgb(38 175 114 / 50%), 0px 5px 5px -1px rgb(7 56 4 / 25%), inset 4px 4px 8px rgb(89 188 177 / 50%), inset -4px -4px 8px rgba(19, 95, 216, 0.35)
+}
+
+.btn-log:hover,
+.btn-cad:hover {
+    background-position: right top;
+}
+
+.btn-log:is(:focus, :focus-visible, :active),
+.btn-cad:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .btn-log,
+    .btn-cad {
+        transition: linear;
+    }
+}
+
+.rowTable:hover {
+    background-color: #2D9596;
+    cursor: pointer;
+    color: #f0f0f0;
+}
+
+.readonly-bg {
+    background-color: #ccc; /* Cor de fundo cinza dos campo readOnly */
+  }
